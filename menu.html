@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang=”en”>
+	<head>
+	    <meta charset="utf-8">
+		<title>Menu</title>
+		<link href="newmarathon.css"
+		rel="stylesheet">
+	</head>
+	<body>
+	<header class="main-header">
+	<div class="outer-div">
+			<nav>
+			<ul>
+			<li><a href="newhome.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="directions.html">Directions</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li style="float:right"><a href="about.html">About Our Business</a></li>
+		</ul></nav>
+		<h1 class="contact-title">Our Menu</h1>
+        <!---<form method="post" action="mailto:rogersbs1@appstate.edu" name="ofrm">--->
+		<form method = "post" action="menu.php">
+		<p>Please tell us who you are:</p>
+		<!---
+		<table class="menu-intro"border="0" cellpadding="0" width="550" id="table1">
+			
+			<tr>
+				<td width="340" align="right"><font color="#FF0000">Name</font></td>
+				<td width="10">&nbsp;</td>
+				<td width="200"><input type="text" name="Name" size="30" tabindex="1"></td>
+				</tr>
+				<tr>
+				<td width="340" align="right"><font color="#FF0000">Email</font> 
+				(Your order confirmation will be sent here): </td>
+				<td width="10">&nbsp;</td>
+				<td width="200"><input type="text" name="Email" size="30" tabindex="1"></td>
+			</tr>
+			<tr>
+				<!--<td width="340" align="right">Other Contact Info:</td>
+				<td width="10">&nbsp;</td>
+				<td width="200"><input type="text" name="OtherInfo" size="30" tabindex="1"></td>
+			</tr>
+			<tr>
+				<td width="340" align="right">&nbsp;</td>
+				<td width="10">&nbsp;</td>
+				<td width="200">&nbsp;</td>
+			</tr>
+		</table>
+		-->
+		
+		    <input name="sender" type="text" class="comment-a" placeholder="Your Name"><br>
+            
+            <input name="senderEmail" type="email" class="comment-a" placeholder="Your Email"><br>
+            
+		<p>And tell us what you would like to order:</p>
+		<table class="menu-main" border="0" cellpadding="0" width="550" id="table2">
+		<tr>
+			<td width="250" height="31"><b>Item Description</b></td>
+			<td align="center" width="100" height="31"><b>Quantity</b></td>
+			<td align="right" height="31" width="60"><b>Price </b></td>
+		</tr>
+		<tr>
+			<td width="250" class="breakfast"><b>Breakfast</b></td>
+			<td width="10">&nbsp;</td>
+			<td width="200">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250">Blueberry Muffin</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyA" size="5" tabindex="5"></td>
+			<td align="right" width="60">2.50</td>
+			<td align="right" width="140">
+		</tr>
+		<tr>
+			<td width="250">Cheese Biscuit</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyA" size="5" tabindex="5"></td>
+			<td align="right" width="60">1.50</td>
+			<td align="right" width="140">
+		</tr>
+		<tr>
+			<td width="250">Blueberry Croissant</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyA" size="5" tabindex="5"></td>
+			<td align="right" width="60">3.00</td>
+			<td align="right" width="140">
+		</tr>
+		<tr>
+			<td width="250">Strawberry Scone</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyA" size="5" tabindex="5"></td>
+			<td align="right" width="60">2.50</td>
+			<td align="right" width="140">
+		</tr>
+		
+				<tr>
+			<td width="340" align="right">&nbsp;</td>
+			<td width="10">&nbsp;</td>
+			<td width="200">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250"><b>Cupcakes</b></td>
+			<td width="10">&nbsp;</td>
+			<td width="200">&nbsp;</td>
+		</tr>
+		
+		<tr>
+			<td width="250">Chocolate Chip Cookie Dough</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyB" size="5" tabindex="5"></td>
+			<td align="right" width="60">2.00</td>
+			<td align="right" width="140">
+		</tr>
+				<tr>
+			<td width="250">Strawberry</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyB" size="5" tabindex="5"></td>
+			<td align="right" width="60">2.00</td>
+			<td align="right" width="140">
+		</tr>
+				<tr>
+			<td width="250">Birthday Cake Chocolate</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyB" size="5" tabindex="5"></td>
+			<td align="right" width="60">2.00</td>
+			<td align="right" width="140">
+		</tr>
+				<tr>
+			<td width="250">Birthday Cake Yellow</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyB" size="5" tabindex="5"></td>
+			<td align="right" width="60">2.00</td>
+			<td align="right" width="140">
+		</tr>
+				<tr>
+			<td width="250">Red Velvet</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyB" size="5" tabindex="5"></td>
+			<td align="right" width="60">2.00</td>
+			<td align="right" width="140">
+		</tr>
+		
+				<tr>
+			<td width="340" align="right">&nbsp;</td>
+			<td width="10">&nbsp;</td>
+			<td width="200">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250"><b>Six-Inch Cakes</b></td>
+			<td width="10">&nbsp;</td>
+			<td width="200">&nbsp;</td>
+		</tr>
+		
+		<tr>
+			<td width="250">Chocolate Chip Cookie Dough</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<td align="right" width="60">18.00</td>
+			<td align="right" width="140">
+		</tr>
+				<tr>
+			<td width="250">Strawberry</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<td align="right" width="60">18.00</td>
+			<td align="right" width="140">
+		</tr>
+				<tr>
+			<td width="250">Birthday Cake Chocolate</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<td align="right" width="60">18.00</td>
+			<td align="right" width="140">
+		</tr>
+				<tr>
+			<td width="250">Birthday Cake Yellow</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<td align="right" width="60">18.00</td>
+			<td align="right" width="140">
+		</tr>
+				<tr>
+			<td width="250">Red Velvet</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<td align="right" width="60">18.00</td>
+			<td align="right" width="140">
+		</tr>
+		<tr>
+			<td width="250">&nbsp;</td>
+			<td align="center" width="100">&nbsp;</td>
+			<td align="right" width="60">&nbsp;</td>
+			<td align="right" width="140">&nbsp;</td>
+		</tr>
+
+		</table>
+
+		<p>&nbsp;</p>
+		
+				<input type="submit" class="comment-submit"value="Submit" name="subButton" tabindex="50"> 
+				<input type="reset" class="comment-submit" value="Reset" name="resetButton" tabindex="50"></td>
+			
+		
+		</form>
+		</div>
+		</header>
+		<footer class="main-footer">
+				<div class="container main-footer-container">
+					<!---<h3 class="bakery-name">Sassy Cat Bakery</h3>--->
+					<ul class="nav footer-nav">
+						<li>
+							<a href="https://www.facebook.com/SassyCatBakery/">
+								<img src="facebook-logo.png">
+							</a>
+							<a href="https://www.instagram.com/sassycatbakery/">
+								<img src="instagram-logo-one.png">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+	</body>
+</html>

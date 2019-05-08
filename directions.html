@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang=”en”>
+	<head>
+		<title>Directions</title>
+		<meta charset=”utf-8”>
+				<link href="newmarathon.css"
+		rel="stylesheet">
+		<style>
+      #map {
+        height: 720px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+	</head>
+	<body>
+	<header class="directions-header">
+	<nav>
+		<ul>
+			<li><a class="active" href="newhome.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="directions.html">Directions</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li style="float:right"><a href="about.html">About Our Business</a></li>
+		</ul>
+		</nav>
+        <h3 >Directions</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Sassy Cat Bakery
+  var bakery = {lat: 36.202489, lng: -81.660543};
+  // The map, centered at Sassy Cat Bakery
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 17, center: bakery});
+  // The marker, positioned at Sassy Cat Bakery
+  var marker = new google.maps.Marker({position: bakery, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo80Ac8254o7IHkgaUZFT23pJQwu2RyH0&callback=initMap">
+    </script>
+	<form action="http://maps.google.com/maps" method="get" target="_blank">
+		Enter your starting address:
+		<input type="text" name="saddr" />
+		<input type="hidden" name="daddr" value="240 Shadowlane Drive, Boone"/>
+		<input type="submit" value="Get Directions" />
+	</form>
+	</header>
+	<footer class="directions-footer">
+				<div class="container main-footer-container">
+					<!---<h3 class="bakery-name">Sassy Cat Bakery</h3>--->
+					<ul class="nav footer-nav">
+						<li>
+							<a href="https://www.facebook.com/SassyCatBakery/">
+								<img src="facebook-logo.png">
+							</a>
+							<a href="https://www.instagram.com/sassycatbakery/">
+								<img src="instagram-logo-one.png">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+  </body>
+</html>
+
